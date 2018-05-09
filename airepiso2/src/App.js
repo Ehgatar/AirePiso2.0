@@ -8,6 +8,7 @@ import About from "./components/pages/About"
 import {BrowserRouter as Router,Route} from 'react-router-dom' 
 
 
+
 class App extends Component {
   render() {
     return (
@@ -15,8 +16,9 @@ class App extends Component {
          <div>
           <Headers />
           <section id="content-area">
-          <Listings />
           <Filter />
+          <Listings />
+ 
           </section>
           <Route exact path="/about" component={About} />
         </div>
