@@ -1,32 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
 //import './sass';
-import Headers from './components/Headers/Headers';
-import Filter from './components/Filter/Filter';
-import Listings from './components/Listings/Listings';
+import Home from './components/Home/Home';
 import About from "./components/pages/About"
-import {BrowserRouter as Router,Route} from 'react-router-dom' 
+import Headers from "./components/Headers/Headers"
+import {BrowserRouter as Router,Route, Switch} from 'react-router-dom' 
 
 
 
-class App extends Component {
-  render() {
-    return (
-       <Router>
-         <div>
-          <Headers />
-          <section id="content-area">
-          <Filter />
-          <Listings />
- 
-          </section>
-          <Route exact path="/about" component={About} />
-        </div>
+const App = () => (
+  <Router>
+    <div>
+    <Headers />
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
+    </Switch>
+  </div>
 
-        </Router> 
-    );
-  }
-}
+  </Router> 
+)
 
 export default App;
 

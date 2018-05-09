@@ -1,31 +1,20 @@
 import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
 
- class Headers extends Component {
+const Headers = () => (
+  <header> 
+  <div className="logo"> LOGO </div>
 
-    state = {
-      name: 'Joe'
-    }
-  
+  <nav>
+   <a href = "#"> home </a>
+   <a href = "#"> about us </a>
+   <a href = "#"> login </a>
+   <a href = "#"> Mortgage Calculator </a>
+   <a href = "#" className ="register-btn"> Register </a>
 
-
-  render () {
-    return (
-      <header> 
-       <div className="logo"> LOGO </div>
-
-       <nav>
-        <a href = "#"> home </a>
-        <a href = "#"> about us </a>
-        <a href = "#"> login </a>
-        <a href = "#"> Mortgage Calculator </a>
-        <a href = "#" className ="register-btn"> Register </a>
-
-      </nav>
-        
-      </header>
-    )
-  }
-}
+ </nav>
+   
+ </header>
+)
 
 export default Headers
