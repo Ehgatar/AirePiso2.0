@@ -1,7 +1,7 @@
 import React, { Component} from 'react'
 import ReactDOM from 'react-dom'
 
- class Header extends Component {
+ class Headers extends Component {
 
     state = {
       name: 'Joe'
