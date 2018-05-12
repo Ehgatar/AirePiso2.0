@@ -4,6 +4,7 @@ import './App.css';
 import Home from './components/Home/Home';
 import About from "./components/pages/About"
 import Headers from "./components/Headers/Headers"
+import Calc from "./components/pages/Calc"
 import {BrowserRouter as Router,Route, Switch} from 'react-router-dom' 
 
 
@@ -15,7 +16,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
-      {/* <Route exact path="/calc" component={Calc} /> */}
+      <Route exact path="/calc" component={Calc} />
  </Switch>
   </div>
 
