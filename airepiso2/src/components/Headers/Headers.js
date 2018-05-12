@@ -7,9 +7,9 @@ const Headers = () => (
 
   <nav>
    <a href = "#"> home </a>
-   <a href = "#"> about us </a>
+   <a href = "about"> about us </a>
    <a href = "#"> login </a>
-   <a href = "#"> Mortgage Calculator </a>
+   <a href = "calc"> Mortgage Calculator </a>
    <a href = "#" className ="register-btn"> Register </a>
 
  </nav>
