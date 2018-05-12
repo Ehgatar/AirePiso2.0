@@ -6,8 +6,6 @@ class Listings extends Component {
 state = {
       name: 'Don'
     }
-   
-
 
   render () {
     return (<section id="Listings">
